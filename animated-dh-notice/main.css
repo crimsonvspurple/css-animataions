@@ -123,7 +123,7 @@ textarea {
 
 .dh-animated-notice .bottom {
   color: var(--color-text);
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, system-ui, sans-serif;
   font-size: 1em;
   margin-left: 10px;
 }
@@ -162,8 +162,10 @@ textarea {
 }
 
 .dh-animated-notice .product .cta {
+  font-family: Roboto, system-ui, sans-serif;
+  font-size: 1em;
   position: absolute;
-  background-color: var(--color-text-emphasis);
+
   color: var(--color-text);
   padding: 10px;
   border-radius: 2px;
