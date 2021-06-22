@@ -87,12 +87,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.dh-notice-link {
+  text-decoration: none;
+}
+
 .dh-animated-notice {
   --color-text: white;
   --color-text-emphasis: #0c6384;
   max-width: 800px;
   width: 100%;
-  min-height: 90px;
+  max-height: 90px;
   height: auto;
   margin: auto;
   background-color: #0b1521;
@@ -102,6 +106,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: contain;
   transition: 1s;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -152,7 +157,6 @@ textarea {
 .dh-animated-notice .product {
   height: 90px;
   min-width: 194px;
-  overflow: hidden;
   position: relative;
   text-align: right;
 }
@@ -263,6 +267,20 @@ textarea {
   }
   100% {
     transform: rotateY(-90deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .dh-animated-notice {
+    max-height: 180px;
+    height: 180px;
+    flex-direction: column;
+    background-position: -80px 0px;
+  }
+
+  .dh-animated-notice .text {
+    font-size: 1.1em;
+    padding-top: 10px;
   }
 }
 
