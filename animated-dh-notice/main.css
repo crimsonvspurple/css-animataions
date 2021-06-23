@@ -270,17 +270,26 @@ textarea {
   }
 }
 
+
+
 @media screen and (max-width: 700px) {
   .dh-animated-notice {
     max-height: 180px;
     height: 180px;
     flex-direction: column;
-    background-position: -80px 0px;
+    background-position: -80px 0;
   }
 
   .dh-animated-notice .text {
     font-size: 1.1em;
     padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .dh-animated-notice .text {
+    font-size: 1.4em;
+    transform: translate(0px, 20px)
   }
 }
 
